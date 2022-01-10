@@ -1,0 +1,12 @@
+{
+    "name": "bladellano/vega_kia",
+    "description": "Site para Vega Kia",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Caio",
+            "email": "bladellano@gmail.com"
+        }
+    ],
+    "require": {}
+}
