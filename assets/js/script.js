@@ -1,6 +1,5 @@
 $(function () {
 
-
     // Owl carousel
     const owl = $('.owl-carousel').owlCarousel({
         loop: true,
@@ -11,7 +10,6 @@ $(function () {
 
     $('.customNextBtn').click(() => owl.trigger('next.owl.carousel'));
     $('.customPrevBtn').click(() => owl.trigger('prev.owl.carousel'));
-
 
     //Fixa navbar
     const navbar = document.querySelector('nav.navbar');
