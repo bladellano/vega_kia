@@ -2,17 +2,17 @@
 
 @font-face {
   font-family: "Kia-Bold";
-  src: url("../fonts/KIAB.ttf");
+  src: url("../fonts/KiaSignatureOTFBold.otf");
 }
 
 @font-face {
   font-family: "Kia-Light";
-  src: url("../fonts/KIAL.ttf");
+  src: url("../fonts/KiaSignatureOTFLight.otf");
 }
 
 @font-face {
   font-family: "Kia-Medium";
-  src: url("../fonts/KIAM.ttf");
+  src: url("../fonts/KiaSignatureOTFRegular.otf");
 }
 
 :root {
@@ -26,16 +26,12 @@
 
   --kia-verde-btn-success: #23a600;
 
-  --cor-second: #ff9100;
-  --cor-tertiary: #012a48;
-
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
 
-  --width--box: 222px;
 }
 
 *,
@@ -165,7 +161,7 @@ footer p.icon_socials a {
   font-family: "Kia-Light";
   margin: 30px 0;
   padding: 40px 0;
-  color: var(--kia-preto-noturno);
+  color: #000;
   text-align: center;
 }
 .section_kia h2 {
@@ -177,7 +173,7 @@ footer p.icon_socials a {
   border-width: 3px;
   margin: 0 auto;
   padding: 8px 0;
-  border-color: var(--kia-vermelho-vibrante);
+  border-color: #000;
 }
 
 .section_kia h4 {
@@ -197,6 +193,14 @@ footer p.icon_socials a {
 #servicos {
   background-color: #000;
   color: #fff;
+}
+
+#servicos h2 + hr {
+  /* width: 300px; */
+  /* border-width: 3px; */
+  /* margin: 0 auto; */
+  /* padding: 8px 0; */
+  border-color: #fff;
 }
 
 /* Card services */
@@ -273,6 +277,7 @@ footer p.icon_socials a {
   overflow: hidden;
   margin-bottom: 14px;
   cursor: pointer;
+  transition: .2s;
 }
 .wrap_card_car .card_car img {
   object-fit: cover;
@@ -446,8 +451,12 @@ input[name="search"] {
 
 /* Custom navbar */
 .navbar {
-  font-family: "Kia-Light";
+  font-family: "Kia-Medium";
   margin-bottom: 0;
+}
+.navbar a{
+  color: #000!important;
+
 }
 
 /* Custom button success */
