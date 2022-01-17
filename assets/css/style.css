@@ -31,7 +31,6 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-
 }
 
 *,
@@ -55,7 +54,7 @@ footer .container-fluid.copyright {
 }
 
 footer .container-fluid.desenvolvido {
-  background-color: #fff;
+  background-color: #e3e3e3;
   padding: 20px 0;
   color: #000;
 }
@@ -83,12 +82,12 @@ footer p.icon_socials img {
 footer p.icon_socials a {
   text-decoration: none !important;
 }
-.footer_menu_itens ul li{
+.footer_menu_itens ul li {
   color: inherit;
-  transition: .2s;
+  transition: 0.2s;
   cursor: pointer;
 }
-.footer_menu_itens ul li:hover{
+.footer_menu_itens ul li:hover {
   color: var(--kia-vermelho-vibrante);
 }
 .footer_menu_itens ul {
@@ -224,12 +223,11 @@ footer p.icon_socials a {
 }
 
 .card_services img {
-  filter: invert(100%);
   transform: translateY(0%);
   transition: 0.2s;
 }
 
-.card_services img:hover {
+.card_services:hover img {
   transform: translateY(-8%);
 }
 
@@ -277,7 +275,7 @@ footer p.icon_socials a {
   overflow: hidden;
   margin-bottom: 14px;
   cursor: pointer;
-  transition: .2s;
+  transition: 0.2s;
 }
 .wrap_card_car .card_car img {
   object-fit: cover;
@@ -404,6 +402,15 @@ footer p.icon_socials a {
 
 /* Custom header info */
 
+.container_header {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container_header div {
+  width: 100%;
+  text-align: center;
+  flex: 1 1 200px;
+}
 .header_info {
   background-color: rgba(40, 32, 32, 0.2);
   border-bottom: 2px solid var(--kia-border-line);
@@ -423,19 +430,17 @@ footer p.icon_socials a {
 }
 
 .header_info .logo_kia {
-  width: 140px;
+  width: 128px;
   object-fit: cover;
   height: 44px;
-  margin: 0 6px;
   filter: grayscale(100%) brightness(0);
 }
 .header_info .logo_vega {
-  width: 86px;
-  margin: 0 6px;
+  width: 82px;
+  margin-right: 2px;
 }
 
 .header_info i.fa-map-marker {
-  /* color: var(--kia-preto-noturno); */
   color: #000;
 }
 
@@ -454,9 +459,18 @@ input[name="search"] {
   font-family: "Kia-Medium";
   margin-bottom: 0;
 }
-.navbar a{
-  color: #000!important;
+.navbar a {
+  color: #000 !important;
+}
 
+.navbar li:hover a::after {
+  content: "";
+  position: absolute;
+  top: 3.8em;
+  left: 6%;
+  margin-top: -1em;
+  width: 86%;
+  border: 1px solid #000;
 }
 
 /* Custom button success */

@@ -13,8 +13,12 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
 
+    <link rel="stylesheet" href="assets/css/flexslider.css">
+    <link rel="stylesheet" href="assets/css/custom-flexslider.css">
+
     <link rel="stylesheet" href="assets/css/style.css">
     <title>VEGA KIA</title>
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon.png">
 </head>
 
 <body>
@@ -29,25 +33,24 @@
 
     <div class="header_info">
         <div class="container">
-            <div class="row">
-                <div class="col-md-3">
+            <div class="container_header">
+                <div style="text-align: left;">
                     <img class="logo_vega" src="assets/images/logo_vega_preto.png" alt="LOGO_VEGA">
                     <img class="logo_kia" src="assets/images/logo_kia.svg" alt="LOGO_KIA">
                 </div>
-                <div class="col-md-2">
+                <div style="width: 44%;">
                     <p class="btn"><i class="fa fa-map-marker"></i> BR, KM 1</p>
                 </div>
-                <div class="col-md-3 text-center">
+                <div>
                     <a href="#" class="btn btn-success btn--success">COMPRE AGORA! <i class="fa fa-whatsapp"></i></a>
                 </div>
-                <div class="col-md-2 text-center">
+                <div>
                     <a href="#" class="btn btn-default btn--dark"><i class="fa fa-phone-square"></i> 91 - 3245.2564
                     </a>
                 </div>
-                <div class="col-md-2">
-                    <input type="text" name="search" class="form-control">
-                </div>
+                <div><input type="text" name="search" class="form-control"></div>
             </div>
+
         </div>
     </div>
 
@@ -70,7 +73,7 @@
                     <li><a href="#about">SEMI-NOVOS</a></li>
                     <li><a class="nav-link scroll" href="#servicos">PEÇA E ACESSÓRIOS</a></li>
                     <li><a class="nav-link scroll" href="#consorcio-seguros"">CONSÓRCIO</a></li>
-                    <li><a href="#about">TEST DRIVE</a></li>
+                    <li><a href=" #about">TEST DRIVE</a></li>
                     <li><a class="nav-link scroll" href="#servicos">AGENDAMENTO</a></li>
                     <li><a href="#about">VENDA DIRETA</a></li>
                     <li><a class="nav-link scroll" href="#vega-kia">SOBRE</a></li>
@@ -81,8 +84,69 @@
         </div>
     </nav>
 
-    <!-- Carousel -->
+    <div class="container_default">
+        <!-- Place somewhere in the <body> of your page -->
+        <div id="slider" class="flexslider">
+            <ul class="slides">
+                <li>
+                    <img src="assets/images/kiasorento2014 (1).jpg"" />
+                </li>
+                <li>
+                    <img src=" assets/images/KIA_KX3_Red_Metallic_White_background_Crossover_515202_1280x720.jpg"" />
+                </li>
+                <li>
+                    <img src="assets/images/seltos-exterior-right-front-three-quarter.jpeg"" />
+                </li>
+                <li>
+                    <img src=" assets/images/1637093221182.jpeg"" />
+                </li>
+                <li>
+                    <img src="assets/images/1637093232260.jpeg" />
+                </li>
+                <li>
+                    <img src="assets/images/kia_card-tout_telluride.jpg" />
+                </li>
+                <!-- items mirrored twice, total of 12 -->
+            </ul>
+        </div>
 
+        <div class="custom-navigation">
+            <a href="#" class="flex-prev">
+                <img src="assets/images/left.png">
+            </a>
+            <a href="#" class="flex-next">
+                <img src="assets/images/right.png">
+            </a>
+        </div>
+
+        <div id="carousel" class="flexslider">
+            <ul class="slides">
+                <li>
+                    <img src="assets/images/kiasorento2014 (1).jpg"" />
+                </li>
+                <li>
+                    <img src=" assets/images/KIA_KX3_Red_Metallic_White_background_Crossover_515202_1280x720.jpg"" />
+                </li>
+                <li>
+                    <img src="assets/images/seltos-exterior-right-front-three-quarter.jpeg"" />
+                </li>
+                <li>
+                    <img src=" assets/images/1637093221182.jpeg"" />
+                </li>
+                <li>
+                    <img src="assets/images/1637093232260.jpeg" />
+                </li>
+                <li>
+                    <img src="assets/images/kia_card-tout_telluride.jpg" />
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <!-- Carousel -->
+    <!-- 
     <div class="wrap_carousel">
 
         <div id="owl-demo" class="owl-carousel owl-theme">
@@ -92,13 +156,13 @@
             <div class="item"><img src="assets/images/kia_card-tout_telluride.jpg" alt="The Last of us"></div>
 
         </div>
-        <!-- Arrows owl carousel -->
+        Arrows owl carousel 
         <div class="arrows">
             <img src="assets/images/left.png" class="customNextBtn" alt="">
             <img src="assets/images/right.png" class="customPrevBtn" alt="">
         </div>
 
-    </div>
+    </div> -->
 
     <!-- Vega-kia -->
     <section id="vega-kia" class="section_kia">
@@ -106,9 +170,7 @@
             <h2>Vega Kia</h2>
             <hr>
             <h4>Com apenas um clique e conheça nossa linha de veículos e faça uma cotação. Vem que sai negócio!</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aperiam sed, delectus perspiciatis
-                dolorum culpa sapiente amet placeat vitae pariatur. Perspiciatis, quidem? Ipsum cupiditate a consectetur
-                provident, optio tempore accusamus!</p>
+           
         </div>
     </section>
 
@@ -247,21 +309,21 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="card_services">
-                        <img src="assets/images/consult.png" alt="">
+                        <img src="assets/images/servicos01.png" alt="">
                         <h3>Assitência técnica</h3>
                         <button class="btn btn-default btn-lg">Agende aqui</button>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card_services">
-                        <img src="assets/images/clutch.png" alt="">
+                        <img src="assets/images/servicos03.png" alt="">
                         <h3>Peças e acessórios</h3>
                         <button class="btn btn-default btn-lg">Compre aqui</button>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card_services">
-                        <img src="assets/images/service.png" alt="">
+                        <img src="assets/images/servicos02.png" alt="">
                         <h3>Revisão preço fechado</h3>
                         <button class="btn btn-default btn-lg">Agende aqui</button>
                     </div>
@@ -387,6 +449,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+
+    <script src="assets/js/jquery.flexslider.js"></script>
 
     <script src="assets/js/script.js"></script>
 </body>
