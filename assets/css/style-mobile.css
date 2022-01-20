@@ -43,6 +43,34 @@
   .footer_menu_itens ul {
     text-align: center;
   }
+  .legenda h5 {
+    font-size: 20px;
+  }
+  .legenda p {
+    font-size: 12px;
+  }
+  .card_consorcio_seguros .legenda {
+    height: 48px;
+  }
+  .card_consorcio_seguros {
+    background-size: cover;
+  }
+  .card_consorcio_seguros:hover {
+    background-size: cover;
+  }
+  /**/
+  .interest-options > [type="radio"] + i,
+  .interest-options > [type="checkbox"] + i {
+    width: 52px;
+  }
+  /**/
+  footer .container-fluid.copyright .container .row {
+    display: block;
+  }
+  footer .container-fluid.copyright .container .row div {
+    text-align: center;
+    margin: 8px 0;
+  }
 }
 
 /** Show */
