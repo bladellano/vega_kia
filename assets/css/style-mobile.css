@@ -1,0 +1,56 @@
+/** Hide */
+@media (max-width: 576px) {
+  .d-sm-none {
+    display: none;
+  }
+  .btn--success,
+  .btn--dark,
+  [name="search"] {
+    width: 94%;
+    margin: 6px auto;
+  }
+
+  #slider .flex-viewport {
+    height: 350px;
+  }
+  #slider.flexslider .flex-viewport ul li img {
+    height: 350px;
+  }
+  .custom-navigation a img {
+    width: 50px;
+  }
+
+  /**/
+  .section_kia h2 {
+    font-size: 28px;
+  }
+  .section_kia h4 {
+    font-size: 20px;
+  }
+  .section_kia h2 + hr {
+    width: 100px;
+  }
+  .section_kia {
+    padding: 2px 0;
+  }
+  .wrap_target_car {
+    margin: 8px 0;
+  }
+  /**/
+  footer .container .row .col-md-3 {
+    text-align: center;
+  }
+  .footer_menu_itens ul {
+    text-align: center;
+  }
+}
+
+/** Show */
+@media (min-width: 576px) {
+  .d-sm-block {
+    display: inline-block;
+  }
+  .d-md-none {
+    display: none !important;
+  }
+}

@@ -21,9 +21,7 @@
   --kia-verde-floresta: #5d7d2b;
   --kia-cinza-urbano: #9ea1a2;
   --kia-preto-noturno: #05141f;
-
   --kia-border-line: #929292;
-
   --kia-verde-btn-success: #23a600;
 
   --breakpoint-xs: 0;
@@ -87,8 +85,11 @@ footer p.icon_socials a {
   transition: 0.2s;
   cursor: pointer;
 }
-.footer_menu_itens ul li:hover {
+.footer_menu_itens ul:not(.modelos) li:hover {
   color: var(--kia-vermelho-vibrante);
+}
+.footer_menu_itens ul.modelos li {
+  cursor: unset;
 }
 .footer_menu_itens ul {
   list-style: none;
@@ -195,10 +196,6 @@ footer p.icon_socials a {
 }
 
 #servicos h2 + hr {
-  /* width: 300px; */
-  /* border-width: 3px; */
-  /* margin: 0 auto; */
-  /* padding: 8px 0; */
   border-color: #fff;
 }
 
@@ -372,33 +369,6 @@ footer p.icon_socials a {
   display: flex;
   align-items: flex-end;
 }
-/* Carousel */
-.wrap_carousel {
-  position: relative;
-}
-.wrap_carousel .arrows {
-  position: absolute;
-  z-index: 3;
-  width: 95%;
-  display: flex;
-  justify-content: space-between;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-}
-.wrap_carousel .arrows img {
-  width: 120px;
-  cursor: pointer;
-  -webkit-filter: drop-shadow(2px 3px 9px rgba(0, 0, 0, 0.3));
-  opacity: 0.7;
-}
-
-.wrap_carousel .owl-carousel .item img {
-  object-fit: cover;
-  max-width: 100%;
-  max-height: 100vh;
-}
 
 /* Custom header info */
 
@@ -459,18 +429,18 @@ input[name="search"] {
   font-family: "Kia-Medium";
   margin-bottom: 0;
 }
-.navbar a {
+.navbar a:not(.d-md-none){
   color: #000 !important;
 }
 
-.navbar li:hover a::after {
+.navbar li:hover a:not(.d-md-none)::after {
   content: "";
   position: absolute;
-  top: 3.8em;
+  bottom: 0;
   left: 6%;
-  margin-top: -1em;
+  margin: -1px 0;
   width: 86%;
-  border: 1px solid #000;
+  border: 2px solid #000;
 }
 
 /* Custom button success */
@@ -478,7 +448,7 @@ input[name="search"] {
 .btn--success {
   background-color: var(--kia-verde-btn-success) !important;
   border: 1px solid var(--kia-verde-btn-success) !important;
-  color: #fff;
+  color: #fff!important;
 }
 
 /* Custom button dark */
@@ -486,7 +456,7 @@ input[name="search"] {
 .btn--dark {
   background-color: #000 !important;
   border: 1px solid #000 !important;
-  color: #fff;
+  color: #fff!important;
 }
 .btn--dark:hover {
   color: #fff;
@@ -508,7 +478,7 @@ input[name="search"] {
 .ajax_load_box {
   margin: auto;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
   font-weight: bold;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
