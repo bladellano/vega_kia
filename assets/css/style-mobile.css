@@ -1,5 +1,13 @@
 /** Hide */
 @media (max-width: 576px) {
+  .wrap_cards_car {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .wrap_card_car {
+    flex: 1 1 200px;
+    margin: 2px 5px;
+  }
   .d-sm-none {
     display: none;
   }
@@ -34,6 +42,7 @@
     padding: 2px 0;
   }
   .wrap_target_car {
+    width: 100% !important;
     margin: 8px 0;
   }
   /**/
@@ -80,5 +89,18 @@
   }
   .d-md-none {
     display: none !important;
+  }
+}
+
+/** Tablet */
+@media (max-width: 1180px) {
+  .wrap_target_car {
+    width: 90%;
+  }
+  .navbar-nav > li > a {
+    font-size: 10px;
+  }
+  .container_header div {
+    flex: 1 1 50px;
   }
 }
